@@ -43,6 +43,7 @@ export const userType = defineType({
               {title: 'Clinic Appointment', value: 'Clinic Appointment'},
               {title: 'Complaint', value: 'Complaint'},
               {title: 'Insurance Renewal', value: 'Insurance Renewal'},
+              {title: 'Bill Overdue', value: 'Bill Overdue'},
               {title: 'To Be Confirmed', value: 'TBC'},
             ],
           },
