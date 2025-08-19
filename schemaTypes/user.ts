@@ -33,21 +33,8 @@ export const userType = defineType({
       type: 'array',
       of: [
         {
-          type: 'string',
-          options: {
-            list: [
-              {title: 'Card Lost', value: 'Card Lost'},
-              {title: 'Electric Bill', value: 'Electric Bill'},
-              {title: 'Loan Application', value: 'Loan Application'},
-              {title: 'Loan Repayment', value: 'Loan Repayment'},
-              {title: 'Clinic Appointment', value: 'Clinic Appointment'},
-              {title: 'Complaint', value: 'Complaint'},
-              {title: 'Insurance Renewal', value: 'Insurance Renewal'},
-              {title: 'Bill Overdue (EN)', value: 'Bill Overdue (EN)'},
-              {title: 'Bill Overdue (BM)', value: 'Bill Overdue (BM)'},
-              {title: 'To Be Confirmed', value: 'TBC'},
-            ],
-          },
+          type: 'reference',
+          to: [{type: 'useCaseCategory'}],
         },
       ],
       description: 'Select multiple use case categories for this user',
